@@ -1,9 +1,9 @@
 package main
 
 import (
-	"edulx/CloudflareSpeedTest-api/cfip"
-	_const "edulx/CloudflareSpeedTest-api/const"
-	"edulx/CloudflareSpeedTest-api/task"
+	"chen2021-web/CloudflareSpeedTest-api/cfip"
+	_const "chen2021-web/CloudflareSpeedTest-api/const"
+	"chen2021-web/CloudflareSpeedTest-api/task"
 	"edulx/CloudflareSpeedTest-api/utils"
 	"flag"
 	"fmt"

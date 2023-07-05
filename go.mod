@@ -19,4 +19,4 @@ require (
 	golang.org/x/sys v0.5.0 // indirect
 )
 
-replace edulx/CloudflareSpeedTest-api/utils => github.com/chen2021-web/CloudflareSpeedTest-api v1.2.3
+

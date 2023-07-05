@@ -2,7 +2,7 @@ package task
 
 import (
 	"context"
-	"edulx/CloudflareSpeedTest-api/utils"
+	"chen2021-web/CloudflareSpeedTest-api/utils"
 	"fmt"
 	"github.com/VividCortex/ewma"
 	"io"

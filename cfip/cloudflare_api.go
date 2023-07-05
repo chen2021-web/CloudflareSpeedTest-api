@@ -2,8 +2,8 @@ package cfip
 
 import (
 	"crypto/tls"
-	_const "edulx/CloudflareSpeedTest-api/const"
-	"edulx/CloudflareSpeedTest-api/task"
+	_const "chen2021-web/CloudflareSpeedTest-api/const"
+	"chen2021-web/CloudflareSpeedTest-api/task"
 	"encoding/json"
 	"errors"
 	"fmt"

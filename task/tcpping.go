@@ -1,7 +1,7 @@
 package task
 
 import (
-	"edulx/CloudflareSpeedTest-api/utils"
+	"chen2021-web/CloudflareSpeedTest-api/utils"
 	"fmt"
 	"net"
 	"sort"
