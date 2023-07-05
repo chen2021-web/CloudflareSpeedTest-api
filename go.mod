@@ -1,4 +1,4 @@
-module edulx/CloudflareSpeedTest-api
+module chen2021-web/CloudflareSpeedTest-api
 
 go 1.19
 
