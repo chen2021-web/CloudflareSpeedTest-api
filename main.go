@@ -4,7 +4,7 @@ import (
 	"chen2021-web/CloudflareSpeedTest-api/cfip"
 	_const "chen2021-web/CloudflareSpeedTest-api/const"
 	"chen2021-web/CloudflareSpeedTest-api/task"
-	"edulx/CloudflareSpeedTest-api/utils"
+	"chen2021-web/CloudflareSpeedTest-api/utils"
 	"flag"
 	"fmt"
 	"io"
