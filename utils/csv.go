@@ -1,7 +1,7 @@
 package utils
 
 import (
-	_const "edulx/CloudflareSpeedTest-api/const"
+	_const "chen2021-web/CloudflareSpeedTest-api/const"
 	"encoding/csv"
 	"fmt"
 	"log"

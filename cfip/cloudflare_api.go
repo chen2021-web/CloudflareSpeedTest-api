@@ -45,7 +45,7 @@ func (c *CloudflareAPI) ReadYaml() error {
 	if err != nil {
 		return err
 	}
-	if C.Email == "" || C.ApiKeys == "" || C.ZoneId == "" || C.Domain == "" || len(C.SubDomain) == 0 {
+	if C.Authorization == "" || C.ZoneId == "" || C.Domain == "" || len(C.SubDomain) == 0 {
 		fmt.Println("请检查config.yaml配置文件是否正确")
 		_const.TGPUSH += "请检查config.yaml配置文件是否正确\n"
 		return errors.New("请检查config.yaml配置文件是否正确")
@@ -70,8 +70,9 @@ func (c *CloudflareAPI) GetDomain(ip net.IPAddr) (CFR, error) {
 	if err != nil {
 		return CFR{}, err
 	}
-	req.Header.Add("X-Auth-Email", c.Email)
-	req.Header.Add("X-Auth-Key", c.ApiKeys)
+	//req.Header.Add("X-Auth-Email", c.Email)
+	//req.Header.Add("X-Auth-Key", c.ApiKeys)
+	req.Header.Add("Authorization",c.Authorization)
 	req.Header.Add("Content-Type", "application/json")
 	res, err := client.Do(req)
 	if err != nil {
@@ -210,8 +211,9 @@ func (c *CloudflareAPI) PUTDomains(ip net.IPAddr, subdomain string, ips net.IPAd
 	if err != nil {
 		return err
 	}
-	req.Header.Add("X-Auth-Email", c.Email)
-	req.Header.Add("X-Auth-Key", c.ApiKeys)
+	//req.Header.Add("X-Auth-Email", c.Email)
+	//req.Header.Add("X-Auth-Key", c.ApiKeys)
+	req.Header.Add("Authorization",c.Authorization)
 	req.Header.Add("Content-Type", "application/json")
 	res, err := client.Do(req)
 	if err != nil {
@@ -262,8 +264,9 @@ func (c *CloudflareAPI) CreateDomain(subdomain string, ip net.IPAddr, ips net.IP
 	if err != nil {
 		return err
 	}
-	req.Header.Add("X-Auth-Email", c.Email)
-	req.Header.Add("X-Auth-Key", c.ApiKeys)
+	//req.Header.Add("X-Auth-Email", c.Email)
+	//req.Header.Add("X-Auth-Key", c.ApiKeys)
+	req.Header.Add("Authorization",c.Authorization)
 	req.Header.Add("Content-Type", "application/json")
 	res, err := client.Do(req)
 	if err != nil {
